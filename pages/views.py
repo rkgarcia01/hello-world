@@ -3,11 +3,15 @@ from django.http import HttpResponse
 from django.views.generic import TemplateView
 
 
-class HomePageView(TemplateView):  # capital HomePageView since it is class
+class HomePageView(
+    TemplateView
+):  # capital HomePageView since it is class or Class-Based View(CBV)
     template_name = "home.html"
 
 
-class AboutPageView(TemplateView):
+class AboutPageView(
+    TemplateView
+):  # capital HomePageView since it is class or Class-Based View(CBV)
     template_name = "about.html"
 
 
